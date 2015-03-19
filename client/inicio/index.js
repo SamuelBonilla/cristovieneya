@@ -1,3 +1,5 @@
+// Se activa el scroll automaticamente
+
 Template.index.rendered = function(){
   /* ======= ScrollTo ======= */
   $('a.scrollto').on('click', function(e){
