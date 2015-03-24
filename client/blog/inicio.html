@@ -1,20 +1,23 @@
 <template name="blog">
 
-    <div class="animated fadeInRight" >
+    <!-- div class="animated fadeInRight" -->
         {{> blogheader}}
 
 
         <section id="Acerca-de" class="license section">
+            {{#each posts}}
             <div class="container">
-                <div class="license-inner">
-                    <h2 class="title text-center">Post 1</h2>
+                <div class="blog-inner">
+                    <h2><a href="{{pathFor 'postPermalink'}}">{{title}}</a></h2>
                     <div class="info">
-                        content
+                        {{submitted}}
                     </div><!--//info-->
 
                 </div><!--//license-inner-->
             </div><!--//container-->
+            {{/each}}
+
         </section><!--//how-->
-    </div>
+    <!-- /div -->
 
 </template>

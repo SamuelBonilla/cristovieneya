@@ -372,6 +372,39 @@ pre code {
   background-clip: padding-box;
   margin: 0 auto;
 }
+
+.license .blog-inner {
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin-bottom: 5px;
+
+}
+
+.license .aside-inner {
+    max-width: 300px;
+    background: #fff;
+    padding: 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+
+    margin-bottom: 5px;
+}
+
 .license .info {
   max-width: 760px;
   margin: 0 auto;
