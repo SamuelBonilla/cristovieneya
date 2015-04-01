@@ -20,7 +20,7 @@
                         <li class="active nav-item sr-only"><a class="scrollto" href="#Home">Home</a></li>
                         <li class="nav-item"><a class="scrollto" href="{{pathFor 'index'}}">inicio</a></li>
                         <li class="nav-item"><a class="scrolltos" href="{{pathFor 'blog'}}">Blog</a></li>
-                        {{> loginButtons}}
+                        {{#if currentUser}}<li><a href="{{pathFor 'postSubmit'}}">Submit</a></li>{{/if}}
 
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->

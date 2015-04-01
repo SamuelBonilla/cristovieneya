@@ -1,0 +1,33 @@
+<template name="postEdit">
+
+    {{> blogheader}}
+
+    <section id="Acerca-de" class="license section">
+        <div class="container">
+            <div class="blog-inner">
+                <form class="main form">
+                    <div class="form-group {{errorClass 'title'}}">
+                        <label class="control-label" for="title">Title</label>
+                        <div class="controls">
+                            <input class="form-control" name="title" id="title" type="text" value="{{title}}" placeholder="Name your post"/>
+                            <span class="help-block"> {{errorMessage 'title'}} </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group {{errorClass 'text'}}">
+                        <label class="control-label" for="title">Descripcion</label>
+                        <div class="controls">
+                            <input name="text" id="text" type="text" value="{{text}}" placeholder="Your text"/>
+                            <span class="help-block"> {{errorMessage 'text'}} </span>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="btn btn-default"/>
+                    <hr/>
+                    <a class="btn btn-danger delete" href="#">Delete post</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</template>
